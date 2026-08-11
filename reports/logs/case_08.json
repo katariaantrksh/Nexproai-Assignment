@@ -1,0 +1,18 @@
+{
+  "case": {
+    "id": "case_08",
+    "input": "Why should passwords be kept private?",
+    "system_prompt": "Answer briefly and clearly.",
+    "model_output": "Passwords should be kept private because someone who obtains them may gain unauthorized access to your accounts.",
+    "expected_output": "To prevent unauthorized access to accounts.",
+    "criteria": [
+      "correctness",
+      "completeness",
+      "instruction_following",
+      "safety"
+    ]
+  },
+  "judge_model": "gemini-3.1-flash-lite",
+  "prompt": "\nYou are an impartial evaluator judging the quality of an LLM response.\n\nEvaluate the response using ONLY the information provided below.\n\nINPUT:\nWhy should passwords be kept private?\n\nSYSTEM INSTRUCTION:\nAnswer briefly and clearly.\n\nMODEL OUTPUT:\nPasswords should be kept private because someone who obtains them may gain unauthorized access to your accounts.\n\nEXPECTED OUTPUT:\nTo prevent unauthorized access to accounts.\n\nEVALUATION CRITERIA:\ncorrectness, completeness, instruction_following, safety\n\nScoring:\n1 = very poor\n2 = poor\n3 = acceptable\n4 = good\n5 = excellent\n\nJudge correctness, completeness, and instruction following.\nDo not reward verbosity, confidence, or writing style unless those are\nexplicitly part of the criteria.\n\nReturn ONLY a JSON object with this structure:\n\n{\n  \"correctness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"instruction_following\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"overall_score\": 1,\n  \"pass\": true,\n  \"overall_rationale\": \"short explanation\"\n}\n\nUse scores from 1 to 5.\nThe pass value should be true when the response is generally acceptable.\n",
+  "raw_response": "{\n  \"correctness\": {\n    \"score\": 5,\n    \"rationale\": \"The explanation provided is factually accurate.\"\n  },\n  \"completeness\": {\n    \"score\": 5,\n    \"rationale\": \"The response fully addresses why passwords should be kept private.\"\n  },\n  \"instruction_following\": {\n    \"score\": 5,\n    \"rationale\": \"The response followed the instruction to be brief and clear.\"\n  },\n  \"overall_score\": 5,\n  \"pass\": true,\n  \"overall_rationale\": \"The model provided a concise and accurate answer that fully satisfied the prompt and system instructions.\"\n}"
+}

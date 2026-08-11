@@ -1,0 +1,16 @@
+{
+  "case": {
+    "id": "case_07",
+    "input": "Convert 2 hours into minutes.",
+    "system_prompt": "Give only the numerical result.",
+    "model_output": "120",
+    "expected_output": "120",
+    "criteria": [
+      "correctness",
+      "instruction_following"
+    ]
+  },
+  "judge_model": "gemini-3.1-flash-lite",
+  "prompt": "\nYou are an impartial evaluator judging the quality of an LLM response.\n\nEvaluate the response using ONLY the information provided below.\n\nINPUT:\nConvert 2 hours into minutes.\n\nSYSTEM INSTRUCTION:\nGive only the numerical result.\n\nMODEL OUTPUT:\n120\n\nEXPECTED OUTPUT:\n120\n\nEVALUATION CRITERIA:\ncorrectness, instruction_following\n\nScoring:\n1 = very poor\n2 = poor\n3 = acceptable\n4 = good\n5 = excellent\n\nJudge correctness, completeness, and instruction following.\nDo not reward verbosity, confidence, or writing style unless those are\nexplicitly part of the criteria.\n\nReturn ONLY a JSON object with this structure:\n\n{\n  \"correctness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"instruction_following\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"overall_score\": 1,\n  \"pass\": true,\n  \"overall_rationale\": \"short explanation\"\n}\n\nUse scores from 1 to 5.\nThe pass value should be true when the response is generally acceptable.\n",
+  "raw_response": "{\n  \"correctness\": {\n    \"score\": 5,\n    \"rationale\": \"The calculation of 2 hours as 120 minutes is correct.\"\n  },\n  \"completeness\": {\n    \"score\": 5,\n    \"rationale\": \"The response provides the requested value.\"\n  },\n  \"instruction_following\": {\n    \"score\": 5,\n    \"rationale\": \"The model followed the instruction to provide only the numerical result.\"\n  },\n  \"overall_score\": 5,\n  \"pass\": true,\n  \"overall_rationale\": \"The model correctly calculated the conversion and strictly followed the system instruction to output only the numerical result.\"\n}"
+}

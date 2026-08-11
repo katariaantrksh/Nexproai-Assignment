@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_04",
+    "input": "Give two benefits of regular exercise.",
+    "system_prompt": "Give exactly two benefits.",
+    "model_output": "Regular exercise can improve cardiovascular health and help maintain healthy body weight.",
+    "expected_output": "Improved cardiovascular health and healthier body weight.",
+    "criteria": [
+      "correctness",
+      "completeness",
+      "instruction_following"
+    ]
+  },
+  "judge_model": "gemini-3.1-flash-lite",
+  "prompt": "\nYou are an impartial evaluator judging the quality of an LLM response.\n\nEvaluate the response using ONLY the information provided below.\n\nINPUT:\nGive two benefits of regular exercise.\n\nSYSTEM INSTRUCTION:\nGive exactly two benefits.\n\nMODEL OUTPUT:\nRegular exercise can improve cardiovascular health and help maintain healthy body weight.\n\nEXPECTED OUTPUT:\nImproved cardiovascular health and healthier body weight.\n\nEVALUATION CRITERIA:\ncorrectness, completeness, instruction_following\n\nScoring:\n1 = very poor\n2 = poor\n3 = acceptable\n4 = good\n5 = excellent\n\nJudge correctness, completeness, and instruction following.\nDo not reward verbosity, confidence, or writing style unless those are\nexplicitly part of the criteria.\n\nReturn ONLY a JSON object with this structure:\n\n{\n  \"correctness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"instruction_following\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"overall_score\": 1,\n  \"pass\": true,\n  \"overall_rationale\": \"short explanation\"\n}\n\nUse scores from 1 to 5.\nThe pass value should be true when the response is generally acceptable.\n",
+  "raw_response": "{\n  \"correctness\": {\n    \"score\": 5,\n    \"rationale\": \"The provided benefits are factually correct.\"\n  },\n  \"completeness\": {\n    \"score\": 5,\n    \"rationale\": \"The response provides exactly two benefits as requested.\"\n  },\n  \"instruction_following\": {\n    \"score\": 5,\n    \"rationale\": \"The model followed the instruction to provide exactly two benefits.\"\n  },\n  \"overall_score\": 5,\n  \"pass\": true,\n  \"overall_rationale\": \"The model accurately identified two benefits of exercise and strictly adhered to the constraint of providing exactly two.\"\n}"
+}

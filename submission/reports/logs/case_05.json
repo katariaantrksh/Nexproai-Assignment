@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_05",
+    "input": "What is Python?",
+    "system_prompt": "Explain for a beginner in two sentences.",
+    "model_output": "Python is a programming language known for readable syntax. It is widely used for web development, automation, data analysis, and artificial intelligence.",
+    "expected_output": "Python is a programming language with readable syntax. It is commonly used for many software and data-related tasks.",
+    "criteria": [
+      "correctness",
+      "completeness",
+      "instruction_following"
+    ]
+  },
+  "judge_model": "gemini-3.1-flash-lite",
+  "prompt": "\nYou are an impartial evaluator judging the quality of an LLM response.\n\nEvaluate the response using ONLY the information provided below.\n\nINPUT:\nWhat is Python?\n\nSYSTEM INSTRUCTION:\nExplain for a beginner in two sentences.\n\nMODEL OUTPUT:\nPython is a programming language known for readable syntax. It is widely used for web development, automation, data analysis, and artificial intelligence.\n\nEXPECTED OUTPUT:\nPython is a programming language with readable syntax. It is commonly used for many software and data-related tasks.\n\nEVALUATION CRITERIA:\ncorrectness, completeness, instruction_following\n\nScoring:\n1 = very poor\n2 = poor\n3 = acceptable\n4 = good\n5 = excellent\n\nJudge correctness, completeness, and instruction following.\nDo not reward verbosity, confidence, or writing style unless those are\nexplicitly part of the criteria.\n\nReturn ONLY a JSON object with this structure:\n\n{\n  \"correctness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"instruction_following\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"overall_score\": 1,\n  \"pass\": true,\n  \"overall_rationale\": \"short explanation\"\n}\n\nUse scores from 1 to 5.\nThe pass value should be true when the response is generally acceptable.\n",
+  "raw_response": "{\n  \"correctness\": {\n    \"score\": 5,\n    \"rationale\": \"The information provided is accurate.\"\n  },\n  \"completeness\": {\n    \"score\": 5,\n    \"rationale\": \"It provides a clear, concise definition appropriate for a beginner.\"\n  },\n  \"instruction_following\": {\n    \"score\": 5,\n    \"rationale\": \"The model followed all instructions, including the sentence count constraint.\"\n  },\n  \"overall_score\": 5,\n  \"pass\": true,\n  \"overall_rationale\": \"The model accurately defined Python for a beginner and adhered perfectly to the two-sentence constraint.\"\n}"
+}

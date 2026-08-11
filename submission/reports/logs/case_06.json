@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_06",
+    "input": "What is the largest planet in our solar system?",
+    "system_prompt": "Answer with the planet name and one supporting fact.",
+    "model_output": "Jupiter is the largest planet in our solar system. It is a gas giant.",
+    "expected_output": "Jupiter",
+    "criteria": [
+      "correctness",
+      "completeness",
+      "instruction_following"
+    ]
+  },
+  "judge_model": "gemini-3.1-flash-lite",
+  "prompt": "\nYou are an impartial evaluator judging the quality of an LLM response.\n\nEvaluate the response using ONLY the information provided below.\n\nINPUT:\nWhat is the largest planet in our solar system?\n\nSYSTEM INSTRUCTION:\nAnswer with the planet name and one supporting fact.\n\nMODEL OUTPUT:\nJupiter is the largest planet in our solar system. It is a gas giant.\n\nEXPECTED OUTPUT:\nJupiter\n\nEVALUATION CRITERIA:\ncorrectness, completeness, instruction_following\n\nScoring:\n1 = very poor\n2 = poor\n3 = acceptable\n4 = good\n5 = excellent\n\nJudge correctness, completeness, and instruction following.\nDo not reward verbosity, confidence, or writing style unless those are\nexplicitly part of the criteria.\n\nReturn ONLY a JSON object with this structure:\n\n{\n  \"correctness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"instruction_following\": {\n    \"score\": 1,\n    \"rationale\": \"short explanation\"\n  },\n  \"overall_score\": 1,\n  \"pass\": true,\n  \"overall_rationale\": \"short explanation\"\n}\n\nUse scores from 1 to 5.\nThe pass value should be true when the response is generally acceptable.\n",
+  "raw_response": "{\n  \"correctness\": {\n    \"score\": 5,\n    \"rationale\": \"The information provided is factually accurate.\"\n  },\n  \"completeness\": {\n    \"score\": 5,\n    \"rationale\": \"The response includes the requested planet name and a supporting fact.\"\n  },\n  \"instruction_following\": {\n    \"score\": 5,\n    \"rationale\": \"The model followed all instructions perfectly, providing both the name and one supporting fact.\"\n  },\n  \"overall_score\": 5,\n  \"pass\": true,\n  \"overall_rationale\": \"The model correctly identified Jupiter as the largest planet and provided one supporting fact, adhering perfectly to the system instructions.\"\n}"
+}

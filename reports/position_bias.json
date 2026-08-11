@@ -1,0 +1,27 @@
+{
+  "experiment": "position_bias",
+  "answer_A": "Canberra is the capital of Australia.",
+  "answer_B": "Australia's capital city is Canberra.",
+  "run_A_first": {
+    "winner": "TIE",
+    "score_A": 5,
+    "score_B": 5,
+    "reason": "Both answers are factually correct, clear, and direct.",
+    "_meta": {
+      "model": "gemini-3.1-flash-lite",
+      "latency_ms": 1393.55
+    }
+  },
+  "run_B_first": {
+    "winner": "TIE",
+    "score_A": 5,
+    "score_B": 5,
+    "reason": "Both answers are factually correct, concise, and clearly state that Canberra is the capital of Australia.",
+    "_meta": {
+      "model": "gemini-3.1-flash-lite",
+      "latency_ms": 820.27
+    }
+  },
+  "normalized_second_winner": "TIE",
+  "position_flip_detected": false
+}

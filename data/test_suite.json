@@ -1,0 +1,125 @@
+{
+  "suite_name": "basic_llm_quality_suite",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_01",
+      "input": "What is the capital of France?",
+      "system_prompt": "Answer the question accurately and concisely.",
+      "model_output": "The capital of France is Paris.",
+      "expected_output": "Paris",
+      "criteria": [
+        "correctness",
+        "completeness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_02",
+      "input": "Explain photosynthesis in one sentence.",
+      "system_prompt": "Answer in exactly one clear sentence.",
+      "model_output": "Photosynthesis is the process by which plants use light energy to convert carbon dioxide and water into glucose and oxygen.",
+      "expected_output": "Plants use light energy to convert carbon dioxide and water into chemical energy.",
+      "criteria": [
+        "correctness",
+        "completeness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_03",
+      "input": "What is 15 multiplied by 4?",
+      "system_prompt": "Give the correct numerical answer.",
+      "model_output": "15 multiplied by 4 equals 60.",
+      "expected_output": "60",
+      "criteria": [
+        "correctness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_04",
+      "input": "Give two benefits of regular exercise.",
+      "system_prompt": "Give exactly two benefits.",
+      "model_output": "Regular exercise can improve cardiovascular health and help maintain healthy body weight.",
+      "expected_output": "Improved cardiovascular health and healthier body weight.",
+      "criteria": [
+        "correctness",
+        "completeness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_05",
+      "input": "What is Python?",
+      "system_prompt": "Explain for a beginner in two sentences.",
+      "model_output": "Python is a programming language known for readable syntax. It is widely used for web development, automation, data analysis, and artificial intelligence.",
+      "expected_output": "Python is a programming language with readable syntax. It is commonly used for many software and data-related tasks.",
+      "criteria": [
+        "correctness",
+        "completeness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_06",
+      "input": "What is the largest planet in our solar system?",
+      "system_prompt": "Answer with the planet name and one supporting fact.",
+      "model_output": "Jupiter is the largest planet in our solar system. It is a gas giant.",
+      "expected_output": "Jupiter",
+      "criteria": [
+        "correctness",
+        "completeness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_07",
+      "input": "Convert 2 hours into minutes.",
+      "system_prompt": "Give only the numerical result.",
+      "model_output": "120",
+      "expected_output": "120",
+      "criteria": [
+        "correctness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_08",
+      "input": "Why should passwords be kept private?",
+      "system_prompt": "Answer briefly and clearly.",
+      "model_output": "Passwords should be kept private because someone who obtains them may gain unauthorized access to your accounts.",
+      "expected_output": "To prevent unauthorized access to accounts.",
+      "criteria": [
+        "correctness",
+        "completeness",
+        "instruction_following",
+        "safety"
+      ]
+    },
+    {
+      "id": "case_09",
+      "input": "What does CPU stand for?",
+      "system_prompt": "Give the expansion and a short explanation.",
+      "model_output": "CPU stands for Central Processing Unit. It performs and coordinates many of a computer's instructions.",
+      "expected_output": "Central Processing Unit.",
+      "criteria": [
+        "correctness",
+        "completeness",
+        "instruction_following"
+      ]
+    },
+    {
+      "id": "case_10",
+      "input": "Write a polite sentence declining an invitation.",
+      "system_prompt": "Be polite and concise.",
+      "model_output": "Thank you for inviting me, but unfortunately I will not be able to attend.",
+      "expected_output": "A polite decline.",
+      "criteria": [
+        "instruction_following",
+        "tone",
+        "completeness"
+      ]
+    }
+  ]
+}
