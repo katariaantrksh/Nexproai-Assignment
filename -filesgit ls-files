@@ -1,0 +1,64 @@
+[33mbc070e9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Complete LLM judge take-home assignment
+ .gitignore                                         |   4 [32m+[m
+ README.md                                          | 118 [32m++++[m
+ data/test_suite.json                               | 125 [32m++++[m
+ judge_app/__init__.py                              |   0
+ judge_app/ab_test.py                               | 433 [32m++++++++++++++[m
+ judge_app/bias.py                                  | 647 [32m+++++++++++++++++++++[m
+ judge_app/cli.py                                   | 160 [32m+++++[m
+ judge_app/judge.py                                 | 213 [32m+++++++[m
+ judge_app/parser.py                                |   0
+ judge_app/report.py                                |   0
+ judge_app/validation.py                            | 320 [32m++++++++++[m
+ reports/ab_comparison.json                         | 334 [32m+++++++++++[m
+ reports/bias_experiments.json                      | 220 [32m+++++++[m
+ reports/judge_results.json                         | 405 [32m+++++++++++++[m
+ reports/judge_validation.json                      | 157 [32m+++++[m
+ reports/logs/case_01.json                          |  17 [32m+[m
+ reports/logs/case_02.json                          |  17 [32m+[m
+ reports/logs/case_03.json                          |  16 [32m+[m
+ reports/logs/case_04.json                          |  17 [32m+[m
+ reports/logs/case_05.json                          |  17 [32m+[m
+ reports/logs/case_06.json                          |  17 [32m+[m
+ reports/logs/case_07.json                          |  16 [32m+[m
+ reports/logs/case_08.json                          |  18 [32m+[m
+ reports/logs/case_09.json                          |  17 [32m+[m
+ reports/logs/case_10.json                          |  17 [32m+[m
+ reports/position_bias.json                         |  27 [32m+[m
+ reports/verbosity_bias.json                        |  16 [32m+[m
+ requirements.txt                                   | Bin [31m0[m -> [32m988[m bytes
+ screenshots/adversarial_probe.png                  | Bin [31m0[m -> [32m26201[m bytes
+ screenshots/auditable_prompt_response.png          | Bin [31m0[m -> [32m70489[m bytes
+ screenshots/position_bias.png                      | Bin [31m0[m -> [32m36537[m bytes
+ submission/.gitignore                              |   4 [32m+[m
+ submission/README.md                               | 118 [32m++++[m
+ submission/judge_app/__init__.py                   |   0
+ submission/judge_app/ab_test.py                    | 433 [32m++++++++++++++[m
+ submission/judge_app/bias.py                       | 647 [32m+++++++++++++++++++++[m
+ submission/judge_app/cli.py                        | 160 [32m+++++[m
+ submission/judge_app/judge.py                      | 213 [32m+++++++[m
+ submission/judge_app/parser.py                     |   0
+ submission/judge_app/report.py                     |   0
+ submission/judge_app/validation.py                 | 320 [32m++++++++++[m
+ submission/reports/ab_comparison.json              | 334 [32m+++++++++++[m
+ submission/reports/bias_experiments.json           | 220 [32m+++++++[m
+ submission/reports/judge_results.json              | 405 [32m+++++++++++++[m
+ submission/reports/judge_validation.json           | 157 [32m+++++[m
+ submission/reports/logs/case_01.json               |  17 [32m+[m
+ submission/reports/logs/case_02.json               |  17 [32m+[m
+ submission/reports/logs/case_03.json               |  16 [32m+[m
+ submission/reports/logs/case_04.json               |  17 [32m+[m
+ submission/reports/logs/case_05.json               |  17 [32m+[m
+ submission/reports/logs/case_06.json               |  17 [32m+[m
+ submission/reports/logs/case_07.json               |  16 [32m+[m
+ submission/reports/logs/case_08.json               |  18 [32m+[m
+ submission/reports/logs/case_09.json               |  17 [32m+[m
+ submission/reports/logs/case_10.json               |  17 [32m+[m
+ submission/reports/position_bias.json              |  27 [32m+[m
+ submission/reports/verbosity_bias.json             |  16 [32m+[m
+ submission/requirements.txt                        | Bin [31m0[m -> [32m988[m bytes
+ submission/screenshots/adversarial_probe.png       | Bin [31m0[m -> [32m26201[m bytes
+ .../screenshots/auditable_prompt_response.png      | Bin [31m0[m -> [32m70489[m bytes
+ submission/screenshots/position_bias.png           | Bin [31m0[m -> [32m36537[m bytes
+ submission/test_suite.json                         | 125 [32m++++[m
+ 62 files changed, 6696 insertions(+)
